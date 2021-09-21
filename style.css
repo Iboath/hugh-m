@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_class {
+    display: flex;
+}
+button {
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 1.25rem;
+    position: relative;
+    color: #000;
+    background: none;
+	border: none;
+	cursor: pointer;
+}
+button::before, button::after {
+    border: 3px solid #000;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+button:hover::after {
+    transform: translate(-5px, -5px)
+}
+button:hover::before {
+    transform: translate(5px, 5px)
+}
