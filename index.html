@@ -12,6 +12,8 @@
         <title>Big 3D Printer</title>
     </head>
     <body>
+        <!-- Loading Screen -->
+
         <!-- Main image users see when loading the website -->
         <div class="first_image">
             <div class="first_text">
@@ -36,7 +38,7 @@
                     </ul>
                     <h3>Members</h3>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/mohammad-al-thubaiti/">Mohammad Althubaiti</a> - Computer Engineering</li>
+                        <li><a href="https://www.linkedin.com/in/mohammad-al-thubaiti/">Mohammad Althubaiti</a> - Electrical Engineering</li>
                         <li><a href="https://www.linkedin.com/in/ryan-bowden-3335b41a0/">Ryan Bowden</a> - Computer Engineering</li>
                         <li><a href="https://www.linkedin.com/in/connorclemente/">Connor Clemente</a> - Computer Engineering</li>
                         <li><a href="https://www.linkedin.com/in/samkaynor/">Sam Kaynor</a> - Computer Engineering</li>
@@ -75,11 +77,18 @@
         </div>
         <!-- Second section of text below the second image -->
         <section class="second_section">
-            <h4 class="second_section_text">(From Left to Right) 3D Model 1st, 2nd, and 3rd Perspective, Motor Diagram, and Overall Visual Plan of Project</h4>
+            <h4 class="second_section_text">(Click on Images to Enlarge) 3D Models from Various Perpsectives, Final Renders, Deformation Simulations, LCD Dimensions, Motor Diagram, and Overall Visual Plan of Project</h4>
             <div class="project_images">
-                <a href="3DModel1.png" data-lightbox="mygallery" data-title="3D Model - 1st Perspective"><img src="3DModel1Small.png" alt="3D Model - 1st Perspective"></a>
-                <a href="3DModel2.png" data-lightbox="mygallery" data-title="3D Model - 2nd Perspective"><img src="3DModel2Small.png" alt="3D Model - 2nd Perspective"></a>
-                <a href="3DModel3.png" data-lightbox="mygallery" data-title="3D Model - 3rd Perspective"><img src="3DModel3Small.png" alt="3D Model - 3rd Perspective"></a>
+                <a href="3DModel2.png" data-lightbox="mygallery" data-title="3D Model - 1st Perspective"><img src="3DModel2Small.png" alt="3D Model1"></a>
+                <a href="3DModel1.png" data-lightbox="mygallery" data-title="3D Model - 2nd Perspective"><img src="3DModel1Small.png" alt="3D Model2"></a>
+                <a href="3DModel5.png" data-lightbox="mygallery" data-title="3D Model - 3rd Perspective"><img src="3DModel5Small.png" alt="3D Model3"></a>
+                <a href="3DModel6.png" data-lightbox="mygallery" data-title="3D Model - 4th Perspective"><img src="3DModel6Small.png" alt="3D Model4"></a>
+                <a href="3DModel7.png" data-lightbox="mygallery" data-title="3D Model - 5th Perspective (Added Textures)"><img src="3DModel7Small.png" alt="3D Model5"></a>
+                <a href="FinalRender1.jpg" data-lightbox="mygallery" data-title="3D Model - Final Render (Consisting of Gantry System)"><img src="FinalRender1Small.jpg" alt="3D Model6"></a>
+                <a href="FinalRender2.jpg" data-lightbox="mygallery" data-title="3D Model - FInal Render (Consisting of Gantry System)"><img src="FinalRender2Small.jpg" alt="3D Model7"></a>
+                <a href="Freq3.png" data-lightbox="mygallery" data-title="Deformation Simulation 1"><img src="Freq3Small.png" alt="Freq1"></a>
+                <a href="Freq4.png" data-lightbox="mygallery" data-title="Deformation Simulation 2"><img src="Freq4Small.png" alt="Freq2"></a>
+                <a href="LCD.png" data-lightbox="mygallery" data-title="LCD Dimensions"><img src="LCDSmall.png" alt="LCD Dimensions"></a>
                 <a href="MotorDiagram.jpg" data-lightbox="mygallery" data-title="Motor Diagram"><img src="MotorDiagramSmall.jpg" alt="Motor Diagram"></a>
                 <a href="VisualPlan.png" data-lightbox="mygallery" data-title="Overall Visual Plan of Project"><img src="VisualPlanSmall.png" alt="Visual Plan"></a>
             </div>
@@ -201,6 +210,17 @@
             ScrollReveal().reveal(".split_two", {duration: 1000, origin: 'right'});
             ScrollReveal().reveal("h4", {duration: 1000, origin: 'top'});
             ScrollReveal().reveal(".project_images", {duration: 1000, origin: 'bottom'});
+            //Loading Script
+
+            /*
+            var loader = document.getElementById("loader");
+            window.addEventListener("load", function() {
+                setTimeout(function() {
+                    loader.style.display = "none";
+                }, 1500);
+            });
+            */
+
         </script>
     </body>
 </html>
